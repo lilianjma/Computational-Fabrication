@@ -11,21 +11,14 @@ void setup() {
 }
 
 void draw() {
-  int width = 20;
-  stroke(255,0,0);
-  t.forward(width);
+  int dist = 40;
+  t.forward(dist);
   
   t.penUp();
   t.left(90);
-  t.forward(width/2);
+  t.forward(dist/2);
   t.left(180);
   t.penDown();
-  t.forward(width);
   
-  t.penUp();
-  t.right(90);
-  t.forward(width);
-  t.right(90);
-  t.penDown();
-  t.forward(width);
+  t.forward(dist);
 }
