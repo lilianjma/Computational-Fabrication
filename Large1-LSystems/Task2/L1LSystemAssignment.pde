@@ -24,25 +24,17 @@ Turtle t;
 
 void setup() {
   // set-up drawing
-  size(700, 700);
+  size(1500, 1500);
   background(255);
   stroke(0);
   
   // Create the turtle
   t = new Turtle(this);
-  
+
   // Initialize an L-System using 
   // a method in ExampleLSystemDesigns
   // [TODONE]: call your L-system design method below to create your l-system
-  String axiom = "F+F+F+F";
-  float moveDistance = 10;
-  float rotateAngle = 90;
-  float scaleFactor = 1;
-  HashMap<Character, String> rules = new HashMap<Character, String>();
-    rules.put('F', "F+F-F-FF+F+F-F");
-    rules.put('+', "+");
-    rules.put('-', "-");
-  lSys = new LSystem(axiom, rules, moveDistance, rotateAngle, scaleFactor);
+  lSys = initSquare_treee();
   
   // Don't loop the draw function
   noLoop();

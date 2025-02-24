@@ -62,6 +62,10 @@ class LSystem extends BaseLSystem {
       dist = dist / (scaleFactor * (iterationNum + 1));
     }
     
+    t.penUp();
+    t.goToPoint(400,1500);
+    t.penDown();
+    
     // Get the current iteration string
     String currentIteration = this.getIterationString(); 
     
@@ -81,6 +85,15 @@ class LSystem extends BaseLSystem {
            // [TODONE]: Implement operations for each l-system vocabulary
            t.right(rotateAngle);
            break;
+        case '[':
+            t.push();
+            break;
+        case ']':
+            t.pop();
+            break;
+        case 'C':
+            t.forward(dist);
+            break;
          default:
            // Throw an error if we don't have a draw operation implemented 
            throw new IllegalArgumentException("Missing a drawing operation case for character: " + c.toString());  
