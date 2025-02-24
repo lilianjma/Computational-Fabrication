@@ -89,13 +89,13 @@ LSystem initSquare_maze()
 LSystem initSquare_treee()
 {
   String axiom = "F";
-  float moveDistance = 40;
-  float rotateAngle = 20;
+  float moveDistance = 30;
+  float rotateAngle = 30;
   float scaleFactor = 1;
   HashMap<Character, String> rules = new HashMap<Character, String>();
-    rules.put('F', "C+[[F]-F]-C[-CF]+F");
+    rules.put('F', "[C++[[F]-F]-C[-CF]+F]");
     rules.put('C', "CC");
-    rules.put('+', "+");
+    rules.put('+', "+CC");
     rules.put('-', "-");
     rules.put('[', "[");
     rules.put(']', "]");

@@ -24,7 +24,7 @@ Turtle t;
 
 void setup() {
   // set-up drawing
-  size(1500, 1500);
+  size(1800, 1500);
   background(255);
   stroke(0);
   

@@ -63,7 +63,7 @@ class LSystem extends BaseLSystem {
     }
     
     t.penUp();
-    t.goToPoint(400,1500);
+    t.goToPoint(1400,400);
     t.penDown();
     
     // Get the current iteration string
