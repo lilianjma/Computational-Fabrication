@@ -63,7 +63,7 @@ class LSystem extends BaseLSystem {
     }
     
     t.penUp();
-    t.goToPoint(1400,400);
+    t.goToPoint(400,400);
     t.penDown();
     
     // Get the current iteration string
@@ -96,7 +96,7 @@ class LSystem extends BaseLSystem {
             break;
          default:
            // Throw an error if we don't have a draw operation implemented 
-           throw new IllegalArgumentException("Missing a drawing operation case for character: " + c.toString());  
+           throw new IllegalArgumentException("Missing a drawing operation case for character: " + currentIteration);  
       }
     }
   }

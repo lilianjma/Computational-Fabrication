@@ -34,7 +34,7 @@ void setup() {
   // Initialize an L-System using 
   // a method in ExampleLSystemDesigns
   // [TODONE]: call your L-system design method below to create your l-system
-  lSys = initSquare_treee();
+  lSys = initSquare_task2();
   
   // Don't loop the draw function
   noLoop();
